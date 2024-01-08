@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coptil_Ianc_Proiect2.ListEntryPage"
+             Title="ListEntryPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Adauga programare"
+                    Clicked="OnProgramareAddedClicked" />
+    </ContentPage.ToolbarItems>
+            <ListView x:Name="listView"
+                    Margin="20"
+                    ItemSelected="OnListViewItemSelected">
+            <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Vertical" Padding="10">
+                        <Label Text="{Binding NumePrenumeClient}" FontAttributes="Bold"/>
+                        <Label Text="{Binding TelefonClient}"/>
+                        <Label Text="{Binding Email}"/>
+                        <Label Text="{Binding DataSiOra}" />
+                        <Label Text="{Binding NumePisica}"/>
+                        <Label Text="{Binding VarstaPisica}"/>
+                        <Label Text="{Binding RasaPisica}"/>
+                        <Label Text="{Binding SexPisica}"/>
+                        <Label Text="{Binding Observatii}"/>
+                        <Label Text="{Binding TipHrana}"/>
+                        <Label Text="{Binding TipCamera}"/>
+                        <Label Text="{Binding TipServiciu}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coptil_Ianc_Proiect2.ListPage"
+             Title="ListPage">
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Entry Placeholder="Nume și prenume client"
+            Text="{Binding NumePrenumeClient}" />
+            <Entry Placeholder="Telefon client"
+            Text="{Binding TelefonClient}" />
+            <Entry Placeholder="Email"
+            Text="{Binding Email}" />
+            <DatePicker Date="{Binding DataSiOra, Mode=TwoWay}"
+            Format="D" />
+            <Entry Placeholder="Nume pisica"
+            Text="{Binding NumePisica}" />
+            <Entry Placeholder="Varsta pisica"
+            Text="{Binding VarstaPisica}" Keyboard="Numeric"/>
+            <Entry Placeholder="Rasa pisica"
+            Text="{Binding RasaPisica}" />
+            <Entry Placeholder="Sex pisica"
+            Text="{Binding SexPisica}" />
+            <Editor Placeholder="Observatii"
+            Text="{Binding Observatii}"
+            HeightRequest="50" />
+            <Entry Placeholder="Tip Hrana"
+            Text="{Binding TipHrana}"/>
+            <Entry Placeholder="Tip Camera"
+            Text="{Binding TipCamera}" />
+            <Entry Placeholder="Tip Serviciu"
+            Text="{Binding TipServiciu}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Save"
+                Clicked="OnSaveButtonClicked" />
+                <Button Grid.Column="1"
+                Text="Delete"
+                Clicked="OnDeleteButtonClicked"/>
+            </Grid>
+      
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

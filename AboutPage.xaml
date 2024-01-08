@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coptil_Ianc_Proiect2.AboutPage"
+             Title="AboutPage">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="adapost.png" 
+                   SemanticProperties.Description="Familia Felinelor"
+                   HeightRequest="64" />
+            <Label FontSize="22" FontAttributes="Bold" Text="Familia Felinelor" VerticalOptions="End" />
+            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
+        </HorizontalStackLayout>
+        <Label Text="Bine ați venit la Familia Felinelor !" />
+        <Label Text="La adăpostul nostru, fiecare zi este dedicată îngrijirii și iubirii pentru feline. Suntem bucuroși să vă prezentăm un spațiu în care fiecare pisică primește atenția și grija pe care o merită." />
+        <Label Text="Facilitățile noastre:" />
+        <Label Text="Spații de relaxare, zone de joacă, servicii de îngrijire și înfrumusețare și nutriție." />
+        <Label Text="Contactați-ne:" />
+        <Label Text="Pentru mai multe informații, vă rugăm să ne contactați la adresa de e-mail adapost.familiafelinelor@yahoo.com. Suntem aici pentru a răspunde la orice întrebări!" />
+
+    </VerticalStackLayout>
+</ContentPage>
